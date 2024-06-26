@@ -8,26 +8,88 @@
 <body>
     <header class ="page-header">
       <nav class = "navigation">
-        <h1>device</h1>
-        <form action="" method="get">
-          <input name="s" placeholder="Текст поиска" type="search">
-          <button type="submit">Найти</button>
+        <h1 class="visually-hidden">Интернет-магазин умных девайсов</h1>
+        <a class="logo" href="#">device</a>
+        <form class ="search-form" action="" method="get">
+          <label class = "search-field field">
+            <span class="visually-hidden">Текст поиск</span>
+          <input class= "field-input" name="search" placeholder="Текст поиска" type="search">
+        </label>
+          <button class="search-button button" type="submit">Найти</button>
+        </form>
           <ul class = "navigation-list">
             <li class = "navigation-item">
               <a class="navigation-link" href ="#"> Войти</a>
             </li>
-            <li class = "navigation-item">
-              <a class="navigation-link" href ="#"> Сравнить</a>
-            </li>
-            <li class = "navigation-item">
-              <a class="navigation-link" href ="#"> Корзина</a>
-            </li>
           </ul>
-        </form>
+            <div class="additional-menu">
+              <a class="icon-button" href ="#">
+                <span class="visually-hidden">Сравнить</span>
+              </a>
+              <a class="icon-button" href ="#">
+                <span class="visually-hidden">Корзина</span>
+                <span class="con-button-counter">2</span>
+              </a>
+          </div>
       </nav>
     </header>
     <main>
-      <section></section>
+      <section>
+        <nav>
+          <form class ="catalog-form" action="" method="get">
+            <label class = "catalog-field field">
+              <span class="visually-hidden">Каталог товаров</span>
+              <h2 class="">КАТАЛОГ ТОВАРОВ</h2>
+            <input class= "field-input-catalog" name="catalog" type="button">
+          </label>
+            <button class="catalog-button button" type="submit">Найти
+            </button>
+          </form>
+            <ul class="navigation-lists">
+              <li class="navigation-items">
+                <a class="navigation-links" href="#">ДОСТАВКА</a>
+              </li>
+              <li class="navigation-items">
+                <a class="navigation-links" href="#">ГАРАНТИЯ</a>
+
+              </li>
+              <li class="navigation-items">
+                <a class="navigation-links" href="#">КОНТАНТЫ</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="slider">
+            <li class="slider-item">
+              <img class="slider-img" src="" alt="Квадрокоптер">
+            </li>
+            <li class="slider-item">
+              <img class="slider-img" src="" alt="Умные часы">
+            </li>
+            <li class="slider-item">
+              <img class="slider-img" src="" alt="Селфи палка">
+            </li>
+          </ul>
+
+          <h2>Порхает как бабочка, жалит как пчела</h2>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+            мощным лазером, замаскированным под стандартную камеру.
+          </p>
+
+          <button type="submit">ПОДРОБНЕЕ</button>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link"></a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link"></a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link"></a>
+            </li>
+          </ul>
+
+
+      </section>
     </main>
     <footer>
 
