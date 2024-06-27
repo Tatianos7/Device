@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Device</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Интернет-магазин Device</title>
 </head>
 <body>
+
+  <!-- Навигация -->
+
     <header class ="page-header">
       <nav class = "navigation">
         <h1 class="visually-hidden">Интернет-магазин умных девайсов</h1>
@@ -22,28 +25,24 @@
               <a class="navigation-link" href ="#"> Войти</a>
             </li>
           </ul>
-            <div class="additional-menu">
-              <a class="icon-button" href ="#">
+            <ul class="additional-menu">
+              <li><a class="icon-button" href ="#">
                 <span class="visually-hidden">Сравнить</span>
-              </a>
-              <a class="icon-button" href ="#">
+              </a></li>
+              <li><a class="icon-button" href ="#">
                 <span class="visually-hidden">Корзина</span>
                 <span class="con-button-counter">2</span>
               </a>
-          </div>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <nav>
+            </li>
+          </ul>
+
           <form class ="catalog-form" action="" method="get">
             <label class = "catalog-field field">
               <span class="visually-hidden">Каталог товаров</span>
-              <h2 class="">КАТАЛОГ ТОВАРОВ</h2>
-            <input class= "field-input-catalog" name="catalog" type="button">
+              <!-- <h2 class="">КАТАЛОГ ТОВАРОВ</h2> -->
+            <!-- <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button"> -->
           </label>
-            <button class="catalog-button button" type="submit">Найти
-            </button>
+            <button class="catalog-button button" type="submit">Найти</button>
           </form>
             <ul class="navigation-lists">
               <li class="navigation-items">
@@ -57,24 +56,22 @@
                 <a class="navigation-links" href="#">КОНТАНТЫ</a>
               </li>
             </ul>
-          </nav>
-          <ul class="slider">
-            <li class="slider-item">
-              <img class="slider-img" src="" alt="Квадрокоптер">
-            </li>
-            <li class="slider-item">
-              <img class="slider-img" src="" alt="Умные часы">
-            </li>
-            <li class="slider-item">
-              <img class="slider-img" src="" alt="Селфи палка">
-            </li>
-          </ul>
-
-          <h2>Порхает как бабочка, жалит как пчела</h2>
+      </nav>
+    </header>
+    <main class="main-index">
+      <section class="slider">
+        <img class="slider-image" src="" alt="Фото-товары">
+        <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+        <span>01</span>
+          <h2 class="slider-header">Порхает как бабочка, жалит как пчела</h2>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-
           <button type="submit">ПОДРОБНЕЕ</button>
           <ul class="pagination">
             <li class="pagination-item">
@@ -87,8 +84,68 @@
               <a class="pagination-link"></a>
             </li>
           </ul>
-
-
+        </section>
+      <section class="characteristic">
+        <h2 class="visually-hidden">Характеристики</h2>
+        <ul class="characteristic-list">
+          <li class="characteristic-item">
+            <h3 class="characteristic-title">800 м</h3>
+            <p class="characteristic-description">Дальность полета</p>
+          </li>
+          <li class="characteristic-item">
+            <h3 class="characteristic-title">50 м</h3>
+            <p class="characteristic-description">Радиус поражения</p>
+          </li>
+        </ul>
+      </section>
+      <section class="categories">
+        <h3 class="visually-hidden">Категории каталога</h3>
+        <ul class="categories-list">
+          <li class="categories-item">
+            <img class="categories-icon" src="" alt="Виртуальная реальность">
+            <p class="categories-description">Виртуальная реальность</p>
+          </li>
+          <li class="categories-item">
+            <img class="categories-icon" src="" alt="Моноподы для селфи">
+            <p class="categories-description">Моноподы для селфи</p>
+          </li>
+          <li class="categories-item">
+            <img class="categories-icon" src="" alt="Экшн-камеры">
+            <p class="categories-description">Экшн-камеры</p>
+          </li>
+          <li class="categories-item">
+            <img class="categories-icon" src="" alt="Фитнес-браслеты">
+            <p class="categories-description">Фитнес-браслеты</p>
+          </li>
+          <li class="categories-item">
+            <img class="categories-icon" src="" alt="Умные часы">
+            <p class="categories-description">Умные часы</p>
+          </li>
+          <li class="categories-item">
+            <img class="categories-icon" src="" alt="Квадрокоптеры">
+            <p class="categories-description">Квадрокоптеры</p>
+          </li>
+        </ul>
+      </section>
+      <section class="delivery">
+        <div class="delivery-block">
+        <ul class="delivery-list">
+          <li class="delivery-item">
+            <button class="delivery-button">ДОСТАВКА</button>
+          </li>
+          <li class="delivery-item">
+            <button class="delivery-button">ГАРАНТИЯ</button>
+          </li>
+          <li class="delivery-item">
+            <button class="delivery-button">КРЕДИТ</button>
+          </li>
+        </ul>
+        <h4 class="delivery-header">ДОСТАВКА</h4>
+        <p>Мы с удовольствием доставим ваш товар прямо<br>
+          к вашему подъезду совершенно бесплатно! Ведь<br>
+          мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <img src="" alt="Иконка доставщика">
+      </div>
       </section>
     </main>
     <footer>
