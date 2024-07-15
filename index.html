@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <!-- Навигация -->
+  <!-- Навигация 1-->
 
     <header class ="page-header">
       <nav class = "navigation">
         <h1 class="visually-hidden">Интернет-магазин умных девайсов</h1>
-        <img src="/device/image/logo/logo.svg">
+        <img class="logo" src="/device/image/logo/logo.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
         <form class ="search-form" action="" method="get">
           <label class = "search-field field">
             <span class="visually-hidden">Текст поиск</span>
@@ -22,54 +22,69 @@
         </form>
           <ul class = "navigation-list">
             <li class = "navigation-item">
-              <a class="navigation-link" href ="#"> Войти</a>
+              <a class="navigation-link" href ="#"> 
+                <img src="/device/image/icons/person.svg" alt="Личный кабинет">
+              <span class="registration">Войти</span>
+            </a>
             </li>
           </ul>
             <ul class="additional-menu">
+              <li>
+                <a class="icon-button" href ="#">
+                <img src="/device/image/icons/sort.svg" alt="Сравнить товары">
+                <span class="sort">Сравнить</span>
+              </a>
+            </li>
               <li><a class="icon-button" href ="#">
-                <span class="visually-hidden">Сравнить</span>
-              </a></li>
-              <li><a class="icon-button" href ="#">
-                <span class="visually-hidden">Корзина</span>
-                <span class="con-button-counter">2</span>
+                <span class="con-button-counter"><sup>2</sup></span>
+                <img src="/device/image/icons/basket.svg" alt="Корзина товаров">
+                <span class="basket">Корзина</span>
               </a>
             </li>
           </ul>
-
+<!-- Навигация 2 -->
           <form class ="catalog-form" action="" method="get">
             <label class = "catalog-field field">
-              <span class="visually-hidden">Каталог товаров</span>
-              <h2 class="catalog-title">Каталог товаров</h2>
-            <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button">
+              <span class="catalog-title">Каталог товаров</span>
+            <!-- <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button"> -->
           </label>
-            <button class="catalog-button button" type="submit">Найти</button>
+            <button class="catalog-button button" type="submit">
+              <img src="/device/image/icons/plus.svg" alt="Каталог товаров">
+            </button>
           </form>
             <ul class="navigation-lists">
               <li class="navigation-items">
-                <a class="navigation-links" href="#">Доставка</a>
+                <a class="navigation-links" href="#">
+                  <span class="nav">Доставка</span> 
+                </a>
               </li>
               <li class="navigation-items">
-                <a class="navigation-links" href="#">Гарантия</a>
+                <a class="navigation-links" href="#"> 
+                  <span class="nav">Гарантия</span>   
+                </a>
 
               </li>
               <li class="navigation-items">
                 <a class="navigation-links" href="#">Контанты</a>
               </li>
             </ul>
+            <span>01</span>
       </nav>
     </header>
 
     <main class="main-index">
-
+<!-- секция 1 -->
       <section class="slider">
-        <img class="slider-image" src="" alt="Фото-товары">
         <button class="slider-button slider-prev" type="button">
-        <span class="visually-hidden">Предыдущее фото</span>
+          <img src="/device/image/icons/forward.svg" alt="Предыдущее фото">
+          <span class="visually-hidden">Предыдущее фото</span>
         </button>
+        <img class="slider-image" src="/device/image/catalog/slider-1.png" width="560" height="560" alt="Фото-товары">
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующее фото</span>
+          <img src="/device/image/icons/back.svg" alt="Следующее фото">
         </button>
-        <span>01</span>
+        
           <h2 class="slider-header">Порхает как бабочка, жалит как пчела</h2>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.
@@ -87,7 +102,6 @@
             </li>
           </ul>
         </section>
-
       <section class="characteristic">
         <h2 class="visually-hidden">Характеристики</h2>
         <ul class="characteristic-list">
@@ -106,27 +120,27 @@
         <h3 class="visually-hidden">Категории каталога</h3>
         <ul class="categories-list">
           <li class="categories-item">
-            <img class="categories-icon" src="" alt="Виртуальная реальность">
+            <img class="categories-icon" src="/device/image/icons/virtual-reality.svg" alt="Виртуальная реальность">
             <p class="categories-description">Виртуальная реальность</p>
           </li>
           <li class="categories-item">
-            <img class="categories-icon" src="" alt="Моноподы для селфи">
+            <img class="categories-icon" src="/device/image/icons/selfie.svg" alt="Моноподы для селфи">
             <p class="categories-description">Моноподы для селфи</p>
           </li>
           <li class="categories-item">
-            <img class="categories-icon" src="" alt="Экшн-камеры">
+            <img class="categories-icon" src="/device/image/icons/camera.svg" alt="Экшн-камеры">
             <p class="categories-description">Экшн-камеры</p>
           </li>
           <li class="categories-item">
-            <img class="categories-icon" src="" alt="Фитнес-браслеты">
+            <img class="categories-icon" src="/device/image/icons/fitness.svg" alt="Фитнес-браслеты">
             <p class="categories-description">Фитнес-браслеты</p>
           </li>
           <li class="categories-item">
-            <img class="categories-icon" src="" alt="Умные часы">
+            <img class="categories-icon" src="/device/image/icons/watch.svg" alt="Умные часы">
             <p class="categories-description">Умные часы</p>
           </li>
           <li class="categories-item">
-            <img class="categories-icon" src="" alt="Квадрокоптеры">
+            <img class="categories-icon" src="/device/image/icons/quadcopters.svg" alt="Квадрокоптеры">
             <p class="categories-description">Квадрокоптеры</p>
           </li>
         </ul>
@@ -148,24 +162,28 @@
         </ul>
 
         <h4 class="delivery-header">Доставка</h4>
-        <p>Мы с удовольствием доставим ваш товар прямо<br>
+        <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо<br>
           к вашему подъезду совершенно бесплатно! Ведь<br>
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img src="" alt="Иконка доставщика">
+          <img src="/device/image/icons/delivery.png" width="136" height="164" alt="Иконка доставщика">
       </div>
 
       <div class="rare-item">
-        <img src="" alt="Иконка доставки">
+        <img src="/device/image/icons/car.svg" width="47" height="31" alt="Иконка доставки">
         <h4>Доставим редкий товар под заказ</h4>
-        <img src="" alt="Иконка справки">
+        <div class="information-icon">
+        <img src="/device/image/icons/information.svg" width="2" height="12" alt="Иконка справки">
+        </div>
       </div>
       </section>
-    <section class="about">
+
+  <section class="about-contacts">
+    <div class="about">
       <h3 class="about-title">О нас</h3>
-      <p>Огромный выбор гаджетов не оставит равнодушным<br>
+      <p class="about-text">Огромный выбор гаджетов не оставит равнодушным<br>
          гика, который есть в каждом из нас.
       </p>
-      <p> Мы можем доставить ваш товар в самые отдалённые <br>
+      <p class="about-text"> Мы можем доставить ваш товар в самые отдалённые <br>
          уголки России транспортными компаниями:
         </p>
         <ul class="about-list">
@@ -173,11 +191,10 @@
           <li class="about-item">СДИК</li>
           <li class="about-item">ТоксБерри</li>
         </ul>
-
         <button calass="about-button" type="submit">Подробнее о нас</button>
-    </section>
+    </div>
 
-    <section class="contacts">
+    <div class="contacts">
       <h3 class="contacts-title">Контакты</h3>
       <p>Вы можете забрать товар сами, заехав в наш офис.<br>
         Заодно сможете проверить работоспособность покупки.
@@ -194,11 +211,12 @@
         <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
       </ul>
         <button calass="contacts-button" type="submit">Напишите нам</button>
-    </section>
+    </div>
+  </section>
 
     <section class="subscription">
-      <h3 class="subscription-title"></h3>
-      <p>Еженедельный дайджест с обзорами новинок,<br>
+      <h3 class="subscription-title">Подпишитесь <br> на рассылку</h3>
+      <p class="subscription-text">Еженедельный дайджест с обзорами новинок,<br>
         длительными тест-драйвами, распаковками, а также акции,<br>
          спецпредложения и вот это вот всё.
         </p>
@@ -211,52 +229,58 @@
             <span class="visually-hidden">Подписаться</span>
           </button>
         </form>
-        <img class="check-img" src="#" alt="Галочка">
+        <img class="check-img" src="/device/image/icons/V.svg" alt="Галочка">
         <p>Это бесплатно</p>
     </section>
     </main>
     <footer class="page-footer">
+      <h3 class="visually-hidden">Интернет-магазин умных девайсов</h3>
+        <img class="footer-logo" src="/device/image/logo/yellow.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a class="logo" href="#">device</a>
+        <h3 class="visually-hidden">Контакты</h3>
         <address class="footer-contacts-address">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
         </address>
         <ul class="navigation-lists">
           <li class="navigation-items">
-            <a class="navigation-links" href="#">Доставка</a>
+            <a class="links-footer" href="#">Доставка</a>
           </li>
           <li class="navigation-items">
-            <a class="navigation-links" href="#">Гарантия</a>
+            <a class="links-footer" href="#">Гарантия</a>
 
           </li>
           <li class="navigation-items">
-            <a class="navigation-links" href="#">Контанты</a>
+            <a class="links-footer" href="#">Контанты</a>
           </li>
         </ul>
         <address class="footer-contacts-phone">
-          <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="footer-contacts-address-phone" href="tel:+78005558628">Тел:+7 800 555-86-28</a>
         </address>
       </section>
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button-social" href="#">
               <span class="visually-hidden">facebook</span>
+              <img src="/device/image/icons/facebook.svg" alt="Фейсбук">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Инстаграмм</span>
+            <a class="button-social" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <img src="/device/image/icons/instagram.svg" alt="Инстаграм">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button-social" href="#">
               <span class="visually-hidden">Твиттер</span>
+              <img src="/device/image/icons/twitter.svg" alt="Твиттер">
             </a>
           </li>
         </ul>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <a hidden="#">
+          <span class="">Сделано</span>
+          <img src="device/image/logo/htmlacademy.svg" ></a>
       </section>
     </footer>
 

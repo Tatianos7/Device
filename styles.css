@@ -23,23 +23,120 @@
     }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
     background-color: white;
 }
 
-/* .page-header {
-} */
+.navigation {
+    background-color: #FFE17F;
+    width: 1160px;
+    height: 300px;
+}
 
 .navigation-link {
-    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navigation-links {
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
     color: #000000;
 }
 
 .icon-button {
-    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
     line-height: 22px;
     color: #000000;
 }
+
+.categories-icon {
+    background-color: #FFE17F;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+}
+
+.about {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.about-item {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.contacts {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+
+.subscription {
+    font-size: 18px;
+    width: 1440px;
+    height: 421px;
+    background-color: #F0F0F0;
+}
+
+.subscription-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+
+}
+
+.subscription-text {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.page-footer {
+    margin-top: 0px;
+    width: 1440px;
+    height: 321px;
+    background-color: #444444;
+    color: #FFFFFF;
+}
+
+.address-text {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.links-footer {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-contacts-address-phone {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-style: normal;
+}
+
+.button-social {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
