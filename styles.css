@@ -82,11 +82,12 @@ body {
     font-weight: bold;
 }
 
-.contacts {
+.contacts-title {
     font-size: 50px;
     line-height: 50px;
 }
 
+/* тут */
 
 .subscription {
     font-size: 18px;
