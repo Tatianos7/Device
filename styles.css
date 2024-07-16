@@ -30,7 +30,7 @@ body {
     background-color: white;
 }
 
-.navigation {
+.navigation-block {
     background-color: #FFE17F;
     width: 1160px;
     height: 300px;
@@ -64,6 +64,20 @@ body {
     width: 160px;
     height: 160px;
     margin: 10px;
+   
+}
+
+.rare-item {
+    background-color: #F0F0F0;
+    width: 1160px;
+    height: 100px;
+}
+
+.icon-item {
+    background-color: #FFE17F;
+    width: 125px;
+    height: 100px;
+    margin: 10px;
 }
 
 .about {
@@ -76,6 +90,15 @@ body {
     line-height: 50px;
 }
 
+.about-list {
+    list-style-type: none; 
+  }
+.about-item::before {
+    content: '•'; 
+    color: #FFC700;  
+    padding-right: 8px;
+  }
+
 .about-item {
     font-size: 18px;
     line-height: 20px;
@@ -87,7 +110,25 @@ body {
     line-height: 50px;
 }
 
-/* тут */
+.contacts-subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.contacts-phone{
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contacts-address-text{
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+}
 
 .subscription {
     font-size: 18px;
