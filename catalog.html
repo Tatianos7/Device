@@ -3,59 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <title>Интернет-магазин Device</title>
+  <title>Каталог</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header class ="page-header">
-    <nav class = "navigation">
-      <h1 class="visually-hidden">Интернет-магазин умных девайсов</h1>
-      <a class="logo" href="index.html">device</a>
-      <form class ="search-form" action="" method="get">
-        <label class = "search-field field">
-          <span class="visually-hidden">Текст поиск</span>
-        <input class= "field-input" name="search" placeholder="Текст поиска" type="search">
+<!-- Навигация 1-->
+<header class ="page-header">
+  <nav class = "navigation-block">
+     <!-- <span class="visually-hidden">Интернет-магазин умных девайсов</span> -->
+    <img class="logo" src="/device/image/logo/logo.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
+    <form class ="search-form" action="#" method="get">
+      <label class = "search-field field">
+        <span class="visually-hidden">Текст поиск</span>
+      <input class= "field-input" name="search" placeholder="Текст поиска" type="search">
+    </label>
+      <button class="search-button button" type="submit">Найти</button>
+    </form>
+      <ul class = "navigation-list">
+        <li class = "navigation-item">
+          <a class="navigation-link" href ="#"> 
+            <img src="/device/image/icons/person.svg" alt="Личный кабинет">
+          <span class="registration">Войти</span>
+        </a>
+        </li>
+      </ul>
+        <ul class="additional-menu">
+          <li>
+            <a class="icon-button" href ="#">
+            <img src="/device/image/icons/sort.svg" alt="Сравнить товары">
+            <span class="sort">Сравнить</span>
+          </a>
+        </li>
+          <li><a class="icon-button" href ="#">
+            <span class="con-button-counter"><sup>2</sup></span>
+            <img src="/device/image/icons/basket.svg" alt="Корзина товаров">
+            <span class="basket">Корзина</span>
+          </a>
+        </li>
+      </ul>
+<!-- Навигация 2 -->
+      <form class ="catalog-form" action="#" method="get">
+        <label class = "catalog-field field">
+          <span class="catalog-title">Каталог товаров</span>
+        <!-- <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button"> -->
       </label>
-        <button class="search-button button" type="submit">Найти</button>
+        <button class="catalog-button button" type="submit">
+          <img src="/device/image/icons/plus.svg" alt="Каталог товаров">
+        </button>
       </form>
-        <ul class = "navigation-list">
-          <li class = "navigation-item">
-            <a class="navigation-link" href ="#"> Войти</a>
-          </li>
-        </ul>
-          <ul class="additional-menu">
-            <li><a class="icon-button" href ="#">
-              <span class="visually-hidden">Сравнить</span>
-            </a></li>
-            <li><a class="icon-button" href ="#">
-              <span class="visually-hidden">Корзина</span>
-              <span class="con-button-counter">2</span>
+        <ul class="navigation-lists">
+          <li class="navigation-items">
+            <a class="navigation-links" href="#">
+              <span class="nav">Доставка</span> 
             </a>
           </li>
+          <li class="navigation-items">
+            <a class="navigation-links" href="#"> 
+              <span class="nav">Гарантия</span>   
+            </a>
+          </li>
+          <li class="navigation-items">
+            <a class="navigation-links" href="#">Контанты</a>
+          </li>
         </ul>
+  </nav>
+</header>
 
-        <form class ="catalog-form" action="" method="get">
-          <label class = "catalog-field field">
-            <span class="visually-hidden">Каталог товаров</span>
-            <h2 class="catalog-title">КАТАЛОГ ТОВАРОВ</h2>
-          <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button">
-        </label>
-          <button class="catalog-button button" type="submit">Найти</button>
-        </form>
-          <ul class="navigation-lists">
-            <li class="navigation-items">
-              <a class="navigation-links" href="#">Доставка</a>
-            </li>
-            <li class="navigation-items">
-              <a class="navigation-links" href="#">Гарантия</a>
-
-            </li>
-            <li class="navigation-items">
-              <a class="navigation-links" href="#">Контанты</a>
-            </li>
-          </ul>
-    </nav>
-  </header>
   <main class="main-inner">
+
     <header class="inner-header">
       <h1 class="inner-header-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
@@ -70,8 +85,9 @@
         </li>
       </ul>
     </header>
+
     <section class="catalog-products">
-      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <span class="visually-hidden">Список товаров с фильтрами</span>
       <h3>Фильтр:</h3>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
@@ -178,51 +194,55 @@
       <a class="button" href="#">
         <span class="visually-hidden">По убыванию</span>
       </a>
-      <ul class="product-list">
-        <li class="product-card">
+
       <div class="product-card">
+      <ul class="product-list">
+        <li class="product-card-item">
+      <div class="product-card-block">
         <a class="product-card-link" href="product.html">
-          <img class="product-card-image" src="#" alt="Карточка товара">
+          <img class="product-card-image" src="/device/image/catalog/amateur selfie.jpg" alt="Карточка товара">
           <h3 class="product-card-title">Любительская<br>селфи-палка</h3>
         </a>
         <b class="product-card-price">500 ₽</b>
-        <!-- Добавить кнопку для добавления в корзину -->
+        <button class="buttoт-basket">В корзину</button> <!--Добавить тип кнопки -->
       </div>
       </li>
-      <li class="product-card">
-        <div class="product-card">
+      <li class="product-card-item">
+        <div class="product-card-block">
           <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="#" alt="Карточка товара">
+            <img class="product-card-image" src="/device/image/catalog/professional selfie.jpg" alt="Карточка товара">
             <h3 class="product-card-title">Профессиональная<br> селфи-палка </h3>
           </a>
           <b class="product-card-price">1 500 ₽</b>
-          <!-- Добавить кнопку для добавления в корзину -->
+          <button class="buttoт-basket">В корзину</button> <!--Добавить тип кнопки -->
         </div>
         </li>
-        <li class="product-card">
-          <div class="product-card">
+        <li class="product-card-item">
+          <div class="product-card-block">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="#" alt="Карточка товара">
+              <img class="product-card-image" src="/device/image/catalog/unsinkable selfie.jpg" alt="Карточка товара">
               <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
             </a>
             <b class="product-card-price">2 500 ₽</b>
-            <!-- Добавить кнопку для добавления в корзину -->
+            <button class="buttoт-basket">В корзину</button>
           </div>
           </li>
-          <li class="product-card">
-            <div class="product-card">
+          <li class="product-card-item">
+            <div class="product-card-block">
               <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="#" alt="Карточка товара">
+                <img class="product-card-image" src="/device/image/catalog/follow me.jpg" alt="Карточка товара">
                 <h3 class="product-card-title">Селфи-палка «Следуй<br>за мной»</h3>
               </a>
               <b class="product-card-price">1 500 ₽</b>
-              <!-- Добавить кнопку для добавления в корзину -->
+              <button class="buttoт-basket">В корзину</button> <!--Добавить тип кнопки -->
             </div>
             </li>
       </ul>
-      <button class="button pagination-show-more" type="button">Показать ещё</button>
+      <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+  
 
-      <ul class="pagination">
+      <div class="pagination">
+      <ul class="pagination-list">
         <li class="pagination-item">
           <a class="pagination-link pagination-prev pagination-disabled">
             <span class="visually-hidden">Назад</span>
@@ -249,51 +269,60 @@
           </a>
         </li>
       </ul>
+    </div>
+  </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <a class="logo" href="index.html">device</a>
-      <address class="footer-contacts-address">
-        <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </address>
-      <ul class="navigation-lists">
-        <li class="navigation-items">
-          <a class="navigation-links" href="#">Доставка</a>
-        </li>
-        <li class="navigation-items">
-          <a class="navigation-links" href="#">Гарантия</a>
 
-        </li>
-        <li class="navigation-items">
-          <a class="navigation-links" href="#">Контанты</a>
-        </li>
-      </ul>
-      <address class="footer-contacts-phone">
-        <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-      </address>
-    </section>
-    <section class="footer-social">
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">facebook</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Инстаграмм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-      </ul>
-      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-    </section>
-  </footer>
+   <footer class="page-footer">
+      <h3 class="visually-hidden">Интернет-магазин умных девайсов</h3>
+        <img class="footer-logo" src="/device/image/logo/yellow.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
+      <section class="footer-contacts">
+        <h3 class="visually-hidden">Контакты</h3>
+        <address class="footer-contacts-address">
+          <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
+        </address>
+        <ul class="navigation-lists">
+          <li class="navigation-items">
+            <a class="links-footer" href="#">Доставка</a>
+          </li>
+          <li class="navigation-items">
+            <a class="links-footer" href="#">Гарантия</a>
+
+          </li>
+          <li class="navigation-items">
+            <a class="links-footer" href="#">Контанты</a>
+          </li>
+        </ul>
+        <address class="footer-contacts-phone">
+          <a class="footer-contacts-address-phone" href="tel:+78005558628">Тел:+7 800 555-86-28</a>
+        </address>
+      </section>
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">facebook</span>
+              <img src="/device/image/icons/facebook.svg" alt="Фейсбук">
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <img src="/device/image/icons/instagram.svg" alt="Инстаграм">
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button-social" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <img src="/device/image/icons/twitter.svg" alt="Твиттер">
+            </a>
+          </li>
+        </ul>
+        <a href="#">
+          <span class="">Сделано</span>
+          <img src="device/image/logo/htmlacademy.svg" alt="Логотип"></a>
+      </section>
+    </footer>
 </body>
 </html>
