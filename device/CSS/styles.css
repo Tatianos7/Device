@@ -93,6 +93,7 @@ body {
 .about-list {
     list-style-type: none; 
   }
+  
 .about-item::before {
     content: '•'; 
     color: #FFC700;  
