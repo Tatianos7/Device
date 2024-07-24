@@ -12,10 +12,12 @@
     <header class ="page-header">
       <nav class = "navigation-block">
          <!-- <span class="visually-hidden">Интернет-магазин умных девайсов</span> -->
-        <img class="logo" src="/device/image/logo/logo.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
+
+         <img class="logo" src="/device/image/logo/logo.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
+         <div class="navigation-user">
         <form class ="search-form" action="#" method="get">
           <label class = "search-field field">
-            <span class="visually-hidden">Текст поиск</span>
+            <span class="visually-hidden" hidden>Текст поиск</span>
           <input class= "field-input" name="search" placeholder="Текст поиска" type="search">
         </label>
           <button class="search-button button" type="submit">Найти</button>
@@ -29,20 +31,22 @@
             </li>
           </ul>
             <ul class="additional-menu">
-              <li>
+              <li class="additional-item">
                 <a class="icon-button" href ="#">
                 <img src="/device/image/icons/sort.svg" alt="Сравнить товары">
                 <span class="sort">Сравнить</span>
               </a>
             </li>
-              <li><a class="icon-button" href ="#">
-                <span class="con-button-counter"><sup>2</sup></span>
+              <li class="additional-item"><a class="icon-button" href ="#">
+                <span class="icon-button-counter"><sup>2</sup></span>
                 <img src="/device/image/icons/basket.svg" alt="Корзина товаров">
                 <span class="basket">Корзина</span>
               </a>
             </li>
           </ul>
+        </div>
 <!-- Навигация 2 -->
+        <div class="navigation-catalog">
           <form class ="catalog-form" action="#" method="get">
             <label class = "catalog-field field">
               <span class="catalog-title">Каталог товаров</span>
@@ -68,28 +72,29 @@
                 <a class="navigation-links" href="#">Контанты</a>
               </li>
             </ul>
-            <span>01</span>
+            <span class="slider-page">01</span>
+          </div>
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-conteiner main-index">
 <!-- секция 1 -->
       <section class="slider">
         <button class="slider-button slider-prev" type="button">
           <img src="/device/image/icons/forward.svg" alt="Предыдущее фото">
-          <span class="visually-hidden">Предыдущее фото</span>
+          <span class="visually-hidden" hidden>Предыдущее фото</span>
         </button>
         <img class="slider-image" src="/device/image/catalog/slider-1.png" width="560" height="560" alt="Фото-товары">
         <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
+          <span class="visually-hidden" hidden>Следующее фото</span>
           <img src="/device/image/icons/back.svg" alt="Следующее фото">
         </button>
-
+        <div class="slider-text">
           <h2 class="slider-header">Порхает как бабочка, жалит как пчела</h2>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <button type="submit">Плдробнее</button>
+          <button type="submit">Подробнее</button>
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link"></a>
@@ -101,9 +106,7 @@
               <a class="pagination-link"></a>
             </li>
           </ul>
-        </section>
-      <section class="characteristic">
-        <h2 class="visually-hidden">Характеристики</h2>
+        <h2 class="visually-hidden" hidden>Характеристики</h2>
         <ul class="characteristic-list">
           <li class="characteristic-item">
             <h3 class="characteristic-title">800 м</h3>
@@ -114,8 +117,9 @@
             <p class="characteristic-description">Радиус поражения</p>
           </li>
         </ul>
+      </div>
       </section>
-
+ <!-- секция 2-->
       <section class="categories">
         <h3 class="visually-hidden">Категории каталога</h3>
         <ul class="categories-list">
@@ -145,9 +149,8 @@
           </li>
         </ul>
       </section>
-
+      <!-- секция 3 -->
       <section class="delivery">
-
         <div class="delivery-block">
         <ul class="delivery-list">
           <li class="delivery-item">
