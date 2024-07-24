@@ -158,6 +158,13 @@ body {
   line-height: 50px;
 }
 
+.characteristic-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-right: 20px;
+}
+
 .characteristic-title {
   font-size: 36px;
 }
@@ -167,31 +174,81 @@ body {
 }
 
 
-
-
 /* секция 2 */
+.categories {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+}
+
+.categories-description {
+  margin-left: 10px;
+}
 
 .categories-icon {
     background-color: #FFE17F;
     width: 160px;
     height: 160px;
     margin: 10px;
+}
+/* секция 3 */
+.delivery {
+  margin-left: 140px;
+  margin-right: 203px;
 
 }
 
-/* секция 3 */
+.delivery-block {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.delivery-list {
+  padding: 0;
+}
+
+.delivery-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.delivery-block-text {
+  margin-left: 116px;
+ }
+
 .rare-item {
-    background-color: #F0F0F0;
-    width: 1160px;
-    height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F0F0F0;
+  width: 1160px;
+  height: 100px;
+
 }
 
 .icon-item {
-    background-color: #FFE17F;
-    width: 125px;
-    height: 100px;
-    margin: 10px;
+  display: block;
+  background-color: #FFE17F;
+  width: 125px;
+  height: 100px;
+  margin: 0;
 }
+
+.rare-tatle {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* секция 4 */
 
 .about {
     font-size: 18px;
