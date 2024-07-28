@@ -37,6 +37,7 @@ body {
   color: #000000;
   background-color: white;
   margin-top: 40px;
+
 }
 
 
@@ -142,6 +143,7 @@ body {
 }
 
 /* секция 1 */
+
 .slider {
   display: flex;
   margin-left: 140px;
@@ -235,11 +237,15 @@ body {
 }
 
 .icon-item {
-  display: block;
   background-color: #FFE17F;
   width: 125px;
   height: 100px;
-  margin: 0;
+
+}
+
+.rare-car {
+  margin-top: 35px;
+  margin-left: 39px;
 }
 
 .rare-tatle {
@@ -248,7 +254,19 @@ body {
   text-transform: uppercase;
 }
 
+
 /* секция 4 */
+
+.about-contacts {
+  display: flex;
+  margin-left: 140px;
+
+
+}
+
+.contacts {
+  margin-left: 108px;
+}
 
 .about {
     font-size: 18px;
@@ -270,10 +288,14 @@ body {
     padding-right: 8px;
   }
 
+.about-list {
+padding: 0;
+}
+
 .about-item {
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
 }
 
 .contacts-title {
@@ -300,12 +322,48 @@ body {
     line-height: 30px;
     font-style: normal;
 }
+/* секция 5 */
 
-.subscription {
+ .subscription {
     font-size: 18px;
     width: 1440px;
     height: 421px;
     background-color: #F0F0F0;
+}
+
+.subscription-block_text {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subscription-text {
+margin-left: 252px;
+}
+
+.subscription-form {
+  margin: 140px;
+}
+
+.subscription-form_block {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline
+}
+
+.field {
+  width: 557px;
+}
+
+.button {
+  margin-right: 39px;
+  width: 253px;
+}
+
+ .check-img {
+  margin-right: 16px;
 }
 
 .subscription-title {
@@ -316,11 +374,7 @@ body {
 
 }
 
-.subscription-text {
-    font-size: 18px;
-    line-height: 30px;
-}
-
+/* футер */
 .page-footer {
     margin-top: 0px;
     width: 1440px;
