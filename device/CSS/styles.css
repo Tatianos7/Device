@@ -27,27 +27,28 @@ html {
 }
 
 body {
+  margin: 0;
   display:flex;
   flex-direction: column;
   min-height: 100%;
-  margin: 0;
+  width: 1440px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   background-color: white;
-  margin-top: 40px;
 
 }
 
-
+.main-conteiner {
+  flex-grow: 1;
+}
 
 .page-header {
   background-color: #FFE17F;
   width: 1160px;
   height: 300px;
   display:flex;
-  margin-left: 140px;
 
 }
 
@@ -57,8 +58,11 @@ body {
 }
 
 .navigation-user {
-  display:flex;
   width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
 }
 
 .navigation-catalog {
@@ -87,8 +91,6 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
-
-
 }
 
 .navigation-links {
@@ -102,27 +104,37 @@ body {
   margin: 0;
   padding: 0;
   width: 231px;
-  margin-right: 26px;
 }
 
-.additional-menu {
-  margin: 0 ;
+.additional-menu  {
+  margin: 0;
   padding: 0;
-  width: 240px;
-  margin-right: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.icon-button {
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  line-height: 22px;
+  color: #000000;
 }
 
 /* Навигация 2 */
 
-.catalog-form {
-  width: 293px;
+.navigation-catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+
 }
 
 .navigation-lists {
-  width: 471px;
-
-}
+    margin: 0;
+  }
 
 .slider-page{
   font-family: "Rubik", sans-serif;
@@ -130,28 +142,18 @@ body {
     font-weight: 700;
     font-size: 180px;
     color: #F0F0F0;
-    margin-right: 200px;
-}
-
-.icon-button {
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    color: #000000;
-    line-height: 22px;
-    color: #000000;
+    margin-left: 850px;
+    margin-top: 220px;
 }
 
 /* секция 1 */
 
 .slider {
   display: flex;
-  margin-left: 140px;
 }
 
 .slider-text {
   margin-left: 40px;
-  margin-right: 140px;
 }
 
 .slider-header {
@@ -165,6 +167,7 @@ body {
   justify-content: space-around;
   padding: 0;
   margin-right: 20px;
+
 }
 
 .characteristic-title {
@@ -177,15 +180,11 @@ body {
 
 
 /* секция 2 */
-.categories {
-  margin-left: 140px;
-  margin-right: 140px;
-}
+
 
 .categories-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   padding: 0;
 
 }
@@ -202,7 +201,6 @@ body {
 }
 /* секция 3 */
 .delivery {
-  margin-left: 140px;
   margin-right: 203px;
 
 }
@@ -259,9 +257,6 @@ body {
 
 .about-contacts {
   display: flex;
-  margin-left: 140px;
-
-
 }
 
 .contacts {
@@ -269,13 +264,13 @@ body {
 }
 
 .about {
-    font-size: 18px;
-    line-height: 30px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .about-title {
-    font-size: 50px;
-    line-height: 50px;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .about-list {
@@ -309,7 +304,7 @@ padding: 0;
     font-weight: bold;
 }
 
-.contacts-phone{
+.contacts-phone {
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
@@ -329,6 +324,7 @@ padding: 0;
     width: 1440px;
     height: 421px;
     background-color: #F0F0F0;
+
 }
 
 .subscription-block_text {
@@ -340,11 +336,7 @@ padding: 0;
 }
 
 .subscription-text {
-margin-left: 252px;
-}
-
-.subscription-form {
-  margin: 140px;
+  margin-left: 190px;
 }
 
 .subscription-form_block {
@@ -376,11 +368,37 @@ margin-left: 252px;
 
 /* футер */
 .page-footer {
-    margin-top: 0px;
+    margin: 0px;
     width: 1440px;
     height: 321px;
     background-color: #444444;
     color: #FFFFFF;
+}
+
+.footer-logo {
+  margin-left: 140px;
+}
+
+.footer-contacts {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.navigation-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.line {
+  margin: 0;
+  width: 80px;
+  height: 7px;
+  border: none;
+  background-color: #FFC500;
+
 }
 
 .address-text {
@@ -400,6 +418,19 @@ margin-left: 252px;
     font-size: 16px;
     color: #FFFFFF;
     font-style: normal;
+}
+
+.footer-social {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.footer-social-list {
+  display: flex;
+
 }
 
 .button-social {
