@@ -8,13 +8,14 @@
 </head>
 <body>
 <!-- Навигация 1-->
-<header class ="page-header">
+<header class ="page-header-catalog">
   <nav class = "navigation-block">
-     <!-- <span class="visually-hidden">Интернет-магазин умных девайсов</span> -->
-    <img class="logo" src="/device/image/logo/logo.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
+     <span class="visually-hidden" hidden>Интернет-магазин умных девайсов</span>
+     <img class="logo" src="/device/image/logo/logo.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
+     <div class="navigation-user">
     <form class ="search-form" action="#" method="get">
-      <label class = "search-field field">
-        <span class="visually-hidden">Текст поиск</span>
+      <label class = "search-field">
+        <span class="visually-hidden" hidden>Текст поиск</span>
       <input class= "field-input" name="search" placeholder="Текст поиска" type="search">
     </label>
       <button class="search-button button" type="submit">Найти</button>
@@ -23,27 +24,34 @@
         <li class = "navigation-item">
           <a class="navigation-link" href ="#">
             <img src="/device/image/icons/person.svg" alt="Личный кабинет">
-          <span class="registration">Войти</span>
+          <span class="registration">Коля Петухов</span>
+        </a>
+        </li>
+        <li class = "navigation-item">
+          <a class="navigation-link" href ="#">
+          <span class="exit">Выйти</span>
         </a>
         </li>
       </ul>
         <ul class="additional-menu">
-          <li>
+          <li class="additional-item">
             <a class="icon-button" href ="#">
             <img src="/device/image/icons/sort.svg" alt="Сравнить товары">
             <span class="sort">Сравнить</span>
           </a>
         </li>
-          <li><a class="icon-button" href ="#">
-            <span class="con-button-counter"><sup>2</sup></span>
+          <li class="additional-item"><a class="icon-button" href ="#">
+            <span class="icon-button-counter"><sup>2</sup></span>
             <img src="/device/image/icons/basket.svg" alt="Корзина товаров">
             <span class="basket">Корзина</span>
           </a>
         </li>
       </ul>
+    </div>
 <!-- Навигация 2 -->
+    <div class="navigation-catalog">
       <form class ="catalog-form" action="#" method="get">
-        <label class = "catalog-field field">
+        <label class = "catalog-field">
           <span class="catalog-title">Каталог товаров</span>
         <!-- <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button"> -->
       </label>
@@ -61,11 +69,13 @@
             <a class="navigation-links" href="#">
               <span class="nav">Гарантия</span>
             </a>
+
           </li>
           <li class="navigation-items">
             <a class="navigation-links" href="#">Контанты</a>
           </li>
         </ul>
+      </div>
   </nav>
 </header>
 
@@ -87,23 +97,32 @@
     </header>
 
     <section class="catalog-products">
-      <span class="visually-hidden">Список товаров с фильтрами</span>
-      <h3 class="filter">Фильтр:</h3>
+      <div class="filter-product">
+      <span class="visually-hidden" hidden>Список товаров с фильтрами</span>
+      <h2 class="filter">Фильтр:</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title"> <span class="filter-title">Стоимость</span></legend>
+          <legend class="catalog-filter-title">
+            <span class="filter-title">Стоимость</span>
+          </legend>
+          <div class="range">
+          <div class="range-scale">
           <button class="range-toggle toggle-min" type="button">
             <span class="visually-hidden">Изменить минимальную цену.</span>
           </button>
           <button class="range-toggle toggle-max" type="button">
             <span class="visually-hidden">Изменить максимальную цену.</span>
           </button>
+          </div>
+        </div>
+        <div class="range-wrapper-input">
           <label class="catalog-filter-label">
           от <input class="catalog-filter-input" type="number" name="min-price"> ₽
         </label>
         <label class="catalog-filter-label">
           до <input class="catalog-filter-input" type="number" name="max-price"> ₽
         </label>
+      </div>
         </fieldset>
 
         <fieldset class="catalog-filter-group">
@@ -116,8 +135,7 @@
             <span class="control-label">Черный</span>
           </label>
           </li>
-          </ul>
-          <ul class="catalog-filter-list">
+
             <li class="catalog-filter-item">
           <label class="control">
             <input class="visually-hidden control-input" type="checkbox" name="Белый" checked>
@@ -125,8 +143,7 @@
             <span class="control-label">Белый</span>
           </label>
           </li>
-          </ul>
-          <ul class="catalog-filter-list">
+
             <li class="catalog-filter-item">
           <label class="control">
             <input class="visually-hidden control-input" type="checkbox" name="Синий">
@@ -134,8 +151,7 @@
             <span class="control-label">Синий</span>
           </label>
           </li>
-          </ul>
-          <ul class="catalog-filter-list">
+
             <li class="catalog-filter-item">
           <label class="control">
             <input class="visually-hidden control-input" type="checkbox" name="Красный">
@@ -143,8 +159,7 @@
             <span class="control-label">Красный</span>
           </label>
           </li>
-          </ul>
-          <ul class="catalog-filter-list">
+
             <li class="catalog-filter-item">
           <label class="control">
             <input class="visually-hidden control-input" type="checkbox" name="Розовый">
@@ -162,21 +177,23 @@
               <label class="control">
                 <input class="visually-hidden control-input" type="radio" name="product-group" value="Yes" checked>
                 <span class="control-mark"></span>
-            <span class="control-label">Есть</span>
+                <span class="control-label">Есть</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="visually-hidden control-input" type="radio" name="product-group" value="No">
                 <span class="control-mark"></span>
-            <span class="control-label">Нет</span>
+                <span class="control-label">Нет</span>
               </label>
               </li>
               </ul>
         </fieldset>
         <button class="button" type="submit"><span class="button-submit">Показать</span></button>
       </form>
-
+    </div>
+      <div class="catalog-right-column">
+      <div class="sorting-container">
       <form class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <h2 class="sorting-title">Сортировка</h2>
@@ -194,6 +211,7 @@
       <a class="button" href="#">
         <span class="visually-hidden">По убыванию</span>
       </a>
+    </div>
 
       <div class="product-card">
       <ul class="product-list">
@@ -271,58 +289,63 @@
       </ul>
     </div>
   </div>
+</div>
     </section>
   </main>
 
+   <!-- футер -->
    <footer class="page-footer">
-      <h3 class="visually-hidden">Интернет-магазин умных девайсов</h3>
-        <img class="footer-logo" src="/device/image/logo/yellow.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
-      <section class="footer-contacts">
-        <h3 class="visually-hidden">Контакты</h3>
-        <address class="footer-contacts-address">
-          <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
-        </address>
-        <ul class="navigation-lists">
-          <li class="navigation-items">
-            <a class="links-footer" href="#">Доставка</a>
-          </li>
-          <li class="navigation-items">
-            <a class="links-footer" href="#">Гарантия</a>
+    <h3 class="visually-hidden" hidden>Интернет-магазин умных девайсов</h3>
+      <img class="footer-logo" src="/device/image/logo/yellow.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
+    <section class="footer-block">
+      <div class="footer-contacts">
+      <h3 class="visually-hidden" hidden>Контакты</h3>
+      <address class="footer-address">
+        <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
+      </address>
+      <ul class="navigation-lists">
+        <li class="navigation-items">
+          <a class="links-footer" href="#">Доставка</a>
+        </li>
+        <li class="navigation-items">
+          <a class="links-footer" href="#">Гарантия</a>
 
-          </li>
-          <li class="navigation-items">
-            <a class="links-footer" href="#">Контанты</a>
-          </li>
-        </ul>
-        <address class="footer-contacts-phone">
-          <a class="footer-contacts-address-phone" href="tel:+78005558628">Тел:+7 800 555-86-28</a>
-        </address>
-      </section>
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button-social" href="#">
-              <span class="visually-hidden">facebook</span>
-              <img src="/device/image/icons/facebook.svg" alt="Фейсбук">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button-social" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-              <img src="/device/image/icons/instagram.svg" alt="Инстаграм">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button-social" href="#">
-              <span class="visually-hidden">Твиттер</span>
-              <img src="/device/image/icons/twitter.svg" alt="Твиттер">
-            </a>
-          </li>
-        </ul>
-        <a href="#">
-          <span class="">Сделано</span>
-          <img src="/device/image/logo/htmlacademy.svg" alt="Логотип"></a>
-      </section>
-    </footer>
+        </li>
+        <li class="navigation-items">
+          <a class="links-footer" href="#">Контанты</a>
+        </li>
+      </ul>
+      <address class="footer-contacts-phone">
+        <a class="footer-contacts-address-phone" href="tel:+78005558628">Тел:+7 800 555-86-28</a>
+      </address>
+    </div>
+    </section>
+    <section class="footer-social">
+      <hr class="line">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button-social" href="#">
+            <span class="visually-hidden" hidden>facebook</span>
+            <img src="/device/image/icons/facebook.svg" alt="Фейсбук">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button-social" href="#">
+            <span class="visually-hidden" hidden>Инстаграм</span>
+            <img src="/device/image/icons/instagram.svg" alt="Инстаграм">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button-social" href="#">
+            <span class="visually-hidden" hidden>Твиттер</span>
+            <img src="/device/image/icons/twitter.svg" alt="Твиттер">
+          </a>
+        </li>
+      </ul>
+      <a href="#">
+        <span class="visually-hidden" hidden>Сделано</span>
+        <img src="/device/image/logo/htmlacademy.svg" alt="Логотип"></a>
+    </section>
+  </footer>
 </body>
 </html>

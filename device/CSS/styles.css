@@ -45,20 +45,22 @@ body {
 }
 
 .page-header {
+  margin-top: 40px;
+  margin-left: 140px;
   background-color: #FFE17F;
   width: 1160px;
   height: 300px;
   display:flex;
-
 }
 
 /* Навигация 1 */
 .navigation-block {
   margin: 0 auto;
+
 }
 
 .navigation-user {
-  width: 1040px;
+
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -74,7 +76,7 @@ body {
 .search-form {
   display:flex;
   width: 517px;
-  margin-right: 26px;
+
 }
 
 .field-input {
@@ -101,6 +103,7 @@ body {
 }
 
 .navigation-list {
+  display: flex;
   margin: 0;
   padding: 0;
   width: 231px;
@@ -149,6 +152,7 @@ body {
 /* секция 1 */
 
 .slider {
+  margin-left: 140px;
   display: flex;
 }
 
@@ -167,7 +171,6 @@ body {
   justify-content: space-around;
   padding: 0;
   margin-right: 20px;
-
 }
 
 .characteristic-title {
@@ -186,6 +189,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin-left: 140px;
 
 }
 
@@ -202,6 +206,7 @@ body {
 /* секция 3 */
 .delivery {
   margin-right: 203px;
+  margin-left: 140px;
 
 }
 
@@ -256,6 +261,7 @@ body {
 /* секция 4 */
 
 .about-contacts {
+  margin-left: 140px;
   display: flex;
 }
 
@@ -347,6 +353,7 @@ padding: 0;
 
 .field {
   width: 557px;
+  margin-left: 140px;
 }
 
 .button {
@@ -440,15 +447,43 @@ padding: 0;
 
 /* Каталог */
 
-.inner-header-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 50px;
-    line-height: 50px;
-
+.page-header-catalog {
+  margin-top: 40px;
+  margin-left: 140px;
+  background-color: #FFE17F;
+  width: 1160px;
+  height: 186px;
 }
 
-.main-inner {
-    background-color: #F0F0F0;
+.inner-header-title {
+  margin-left: 200px;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-products {
+  background-color: #f0f0f0;
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
+  margin-right: 13px;
 }
 
 .filter {
@@ -467,6 +502,10 @@ padding: 0;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
+}
+
+.catalog-right-column {
+  width: 840px;
 }
 
 .sorting-title {
