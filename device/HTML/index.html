@@ -10,13 +10,13 @@
   <!-- Навигация 1-->
 
     <header class ="page-header">
-      <nav class = "navigation-block">
-         <span class="visually-hidden" hidden>Интернет-магазин умных девайсов</span>
+      <nav class="navigation-block">
+         <span class="visually-hidden">Интернет-магазин умных девайсов</span>
          <img class="logo" src="/device/image/logo/logo.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
          <div class="navigation-user">
         <form class ="search-form" action="#" method="get">
           <label class = "search-field field">
-            <span class="visually-hidden" hidden>Текст поиск</span>
+            <span class="visually-hidden">Текст поиск</span>
           <input class= "field-input" name="search" placeholder="Текст поиска" type="search">
         </label>
           <button class="search-button button" type="submit">Найти</button>
@@ -32,13 +32,14 @@
             <ul class="additional-menu">
               <li class="additional-item">
                 <a class="icon-button" href ="#">
-                <img src="/device/image/icons/sort.svg" alt="Сравнить товары">
+                <img class="sort-icon" src="/device/image/icons/sort.svg" alt="Сравнить товары">
                 <span class="sort">Сравнить</span>
               </a>
             </li>
-              <li class="additional-item"><a class="icon-button" href ="#">
+              <li class="additional-item">
+                <a class="icon-button" href ="#">
                 <span class="icon-button-counter"><sup>2</sup></span>
-                <img src="/device/image/icons/basket.svg" alt="Корзина товаров">
+                <img class="basket-icon" src="/device/image/icons/basket.svg" width="13" height="21" alt="Корзина товаров">
                 <span class="basket">Корзина</span>
               </a>
             </li>
@@ -51,7 +52,7 @@
               <span class="catalog-title">Каталог товаров</span>
             <!-- <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button"> -->
           </label>
-            <button class="catalog-button button" type="submit">
+            <button class="catalog-button button-submit" type="submit">
               <img src="/device/image/icons/plus.svg" alt="Каталог товаров">
             </button>
           </form>
@@ -68,7 +69,9 @@
 
               </li>
               <li class="navigation-items">
-                <a class="navigation-links" href="#">Контанты</a>
+                <a class="navigation-links" href="#">
+                  <span class="nav">Контанты</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -81,20 +84,20 @@
       <section class="slider">
         <button class="slider-button slider-prev" type="button">
           <img src="/device/image/icons/forward.svg" alt="Предыдущее фото">
-          <span class="visually-hidden" hidden>Предыдущее фото</span>
+          <span class="visually-hidden">Предыдущее фото</span>
         </button>
         <img class="slider-image" src="/device/image/catalog/slider-1.png" width="560" height="560" alt="Фото-товары">
         <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden" hidden>Следующее фото</span>
+          <span class="visually-hidden">Следующее фото</span>
           <img src="/device/image/icons/back.svg" alt="Следующее фото">
         </button>
-        <div class="slider-text">
+          <div class="slider-text">
           <h2 class="slider-header">Порхает как бабочка, жалит как пчела</h2>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+          <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <button type="submit">Подробнее</button>
           <ul class="pagination">
+            <button class="pagination-button" type="submit">Подробнее</button>
             <li class="pagination-item">
               <a class="pagination-link"></a>
             </li>
@@ -105,7 +108,7 @@
               <a class="pagination-link"></a>
             </li>
           </ul>
-        <h2 class="visually-hidden" hidden>Характеристики</h2>
+        <h2 class="visually-hidden">Характеристики</h2>
         <ul class="characteristic-list">
           <li class="characteristic-item">
             <h3 class="characteristic-title">800 м</h3>
@@ -120,7 +123,7 @@
       </section>
  <!-- секция 2-->
       <section class="categories">
-        <h3 class="visually-hidden" hidden>Категории каталога</h3>
+        <h3 class="visually-hidden">Категории каталога</h3>
         <ul class="categories-list">
           <li class="categories-item">
             <img class="categories-icon" src="/device/image/icons/virtual-reality.svg" alt="Виртуальная реальность">
@@ -230,9 +233,9 @@
       <div class="subscription-form_block">
         <form class="subscription-form" action="#" method="post">
           <p class="subscription-email">
-            <label class="visually-hidden" for="subscription-email" hidden>Email</label>
-            <input class="field"  placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
-          <button class="button subscription-button" type="submit">
+            <label class="visually-hidden" for="subscription-email">Email</label>
+            <input class="field-mail"  placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
+          <button class="button-email subscription-button" type="submit">
             <span class="button-text">Подписаться</span>
           </button>
         </p>
@@ -244,15 +247,15 @@
     </main>
 <!-- футер -->
     <footer class="page-footer">
-      <h3 class="visually-hidden" hidden>Интернет-магазин умных девайсов</h3>
+      <h3 class="visually-hidden">Интернет-магазин умных девайсов</h3>
         <img class="footer-logo" src="/device/image/logo/yellow.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
       <section class="footer-block">
         <div class="footer-contacts">
-        <h3 class="visually-hidden" hidden>Контакты</h3>
+        <h3 class="visually-hidden">Контакты</h3>
         <address class="footer-address">
           <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
         </address>
-        <ul class="navigation-lists">
+        <ul class="navigation-footer">
           <li class="navigation-items">
             <a class="links-footer" href="#">Доставка</a>
           </li>
@@ -274,25 +277,25 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button-social" href="#">
-              <span class="visually-hidden" hidden>facebook</span>
+              <span class="visually-hidden">facebook</span>
               <img src="/device/image/icons/facebook.svg" alt="Фейсбук">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button-social" href="#">
-              <span class="visually-hidden" hidden>Инстаграм</span>
+              <span class="visually-hidden">Инстаграм</span>
               <img src="/device/image/icons/instagram.svg" alt="Инстаграм">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button-social" href="#">
-              <span class="visually-hidden" hidden>Твиттер</span>
+              <span class="visually-hidden">Твиттер</span>
               <img src="/device/image/icons/twitter.svg" alt="Твиттер">
             </a>
           </li>
         </ul>
         <a href="#">
-          <span class="visually-hidden" hidden>Сделано</span>
+          <span class="visually-hidden">Сделано</span>
           <img src="/device/image/logo/htmlacademy.svg" alt="Логотип"></a>
       </section>
     </footer>

@@ -40,6 +40,17 @@ body {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-conteiner {
   flex-grow: 1;
 }
@@ -50,34 +61,36 @@ body {
   background-color: #FFE17F;
   width: 1160px;
   height: 300px;
-  display:flex;
 }
 
 /* Навигация 1 */
-.navigation-block {
-  margin: 0 auto;
 
+.navigation-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
+/* .logo {
+
+} */
 
 .navigation-user {
-
-  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between
-}
-
-.navigation-catalog {
-  display:flex;
-  width: 1040px;
+  justify-content: center;
   margin-top: 30px;
+
+
 }
 
 .search-form {
-  display:flex;
-  width: 517px;
-
+  display: flex;
+  margin: 0;
 }
+
+/* .search-field {
+  margin: 0;
+} */
 
 .field-input {
   width: 359px;
@@ -86,44 +99,58 @@ body {
 
 .search-button {
   width: 160px;
-}
-
-.navigation-link {
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
-}
-
-.navigation-links {
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
+  margin-right: 26px;
 }
 
 .navigation-list {
   display: flex;
+  width: 231px;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 231px;
+  margin-right: 26px;
+  flex-wrap: wrap;
+
+}
+
+.navigation-link {
+  display: flex;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
 }
 
 .additional-menu  {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  width: 240px;
+  flex-wrap: wrap;
+}
+
+.additional-item {
+  margin: auto;
 }
 
 .icon-button {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
   color: #000000;
   line-height: 22px;
   color: #000000;
+  width: 105;
+}
+
+.sort-icon,
+.basket-icon {
+  margin-right: 12px;
 }
 
 /* Навигация 2 */
@@ -131,12 +158,59 @@ body {
 .navigation-catalog {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-form {
+  width: 310px;
+  margin-right: 235px;
+}
+
+.catalog-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 5px;;
+}
+
+.catalog-button {
+  width: 50px;
+  height: 50px;
+  background-color: #FFE17F;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 0;
 
 }
 
 .navigation-lists {
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  }
+
+/* .navigation-items {
+
+} */
+
+.navigation-links {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 5px;
   }
 
 .slider-page{
@@ -145,32 +219,43 @@ body {
     font-weight: 700;
     font-size: 180px;
     color: #F0F0F0;
-    margin-left: 850px;
-    margin-top: 220px;
+    margin-left: 895px;
+    margin-top: 30px;
 }
 
 /* секция 1 */
 
 .slider {
-  margin-left: 140px;
   display: flex;
-}
-
-.slider-text {
-  margin-left: 40px;
+  margin-left: 140px;
+  margin-bottom: 70px;
 }
 
 .slider-header {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  width: 545px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.slider-text {
+  margin-left: 40px;
+}
+
+.slider-description {
+  margin-bottom: 50px;
 }
 
 .characteristic-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
   margin-right: 20px;
+  list-style-type: none;
+  width: 307px;
+
 }
 
 .characteristic-title {
@@ -181,43 +266,83 @@ body {
   font-size: 16px;
 }
 
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.pagination-button {
+  width: 220px;
+}
+
+/* .pagination-item {
+
+} */
+
 
 /* секция 2 */
 
+.categories {
+  width: 100%;
+  margin-bottom: 70px;
+}
 
 .categories-list {
   display: flex;
   justify-content: space-between;
+  width: 1160px;
   padding: 0;
-  margin-left: 140px;
+  margin: auto;
+  /* margin-left: 140px; */
+  list-style-type: none;
 
 }
 
 .categories-description {
-  margin-left: 10px;
+  margin: 0;
 }
 
 .categories-icon {
     background-color: #FFE17F;
     width: 160px;
     height: 160px;
-    margin: 10px;
+    margin: 0;
+    margin-bottom: 32px;
 }
 /* секция 3 */
-.delivery {
-  margin-right: 203px;
-  margin-left: 140px;
 
+.delivery {
+  width: 1440px;
+}
+
+.delivery-header {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .delivery-block {
   display: flex;
   justify-content: space-between;
+  width: 1160px;
+  margin: auto;
+  margin-bottom: 142px;
 
 }
 
 .delivery-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 287px;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .delivery-button {
@@ -226,15 +351,12 @@ body {
   text-transform: uppercase;
 }
 
-.delivery-block-text {
-  margin-left: 116px;
- }
-
 .rare-item {
   display: flex;
   justify-content: space-between;
   background-color: #F0F0F0;
   width: 1160px;
+  margin: auto;
   height: 100px;
 
 }
@@ -255,6 +377,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 
@@ -351,12 +474,12 @@ padding: 0;
   align-items: baseline
 }
 
-.field {
+.field-mail {
   width: 557px;
   margin-left: 140px;
 }
 
-.button {
+.button-email {
   margin-right: 39px;
   width: 253px;
 }
@@ -394,7 +517,7 @@ padding: 0;
   justify-content: space-between
 }
 
-.navigation-lists {
+.navigation-footer {
   display: flex;
   justify-content: space-around;
 }
