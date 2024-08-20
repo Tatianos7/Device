@@ -539,7 +539,7 @@ padding: 0;
 }
 
 .footer-logo {
-  width: 1160;
+  margin-left: 140px;
   margin-top: 62px;
   margin-bottom: 35px;
 }
@@ -640,21 +640,41 @@ padding: 0;
   margin-left: 140px;
   background-color: #FFE17F;
   width: 1160px;
-  height: 186px;
+  height: 216px;
+}
+
+/* .main-inner {
+} */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  margin: auto;
 }
 
 .inner-header-title {
-  margin-left: 200px;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin-bottom: 16px;
+}
+
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: auto;
 }
 
 .breadcrumbs {
-  padding: 0;
-  margin-left: 200px;
   display: flex;
   flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
@@ -662,11 +682,20 @@ padding: 0;
   text-align: center;
   text-decoration: none;
   color: #000000;
+  margin-right: 36px;
 }
 
 .catalog-products {
   background-color: #f0f0f0;
   display: flex;
+  justify-content: center;
+  width: 1440px;
+
+}
+
+.filter-product {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter {
@@ -696,15 +725,38 @@ padding: 0;
   width: 840px;
 }
 
+.sorting-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
 .sorting-title {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
+    margin-right: auto;
 }
 
-.product-card {
-    background-color: #FFFFFF;
+.select-control {
+  width: 160px;
+  height: 30px;
 }
+
+.product-list {
+  width: 700px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 44px;
+}
+
+.product-card-item {
+  width: 360px;
+}
+
 .product-card-link {
     text-decoration: none;
     color: #000000;
@@ -722,12 +774,47 @@ padding: 0;
     color: #444444;
 }
 
+.button-download {
+  margin-bottom: 44px;
+  width: 760px;
+  height: 55px;
+}
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+  padding-top:70px;
+  padding: 40px;
+  background-color: #FFFFFF;
+}
+
+.pagination-block {
+  margin-bottom: 78px;
+}
+
 .pagination-list {
-    background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 760px;
+  height: 71px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #F0F0F0;
+}
+
+.pagination-item {
+  margin-right: 8px;
 }
 
 .pagination-link {
     text-decoration: none;
     color: #000000;
 }
+
+.back-button {
+  margin-right: 0 auto;
+}
+
 
