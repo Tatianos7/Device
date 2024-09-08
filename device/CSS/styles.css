@@ -730,7 +730,7 @@ padding: 0;
   flex-direction: row;
   align-items: center;
   margin-bottom: 16px;
-  padding: 16px;
+
 }
 
 .sorting-title {
@@ -780,8 +780,8 @@ padding: 0;
   height: 55px;
 }
 
-.product-card{
-  padding-top:70px;
+.product-card {
+  padding-top: 70px;
   padding: 40px;
   background-color: #FFFFFF;
 }
@@ -804,6 +804,7 @@ padding: 0;
 
 .product-list {
   display: grid;
+  width: 760px;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
