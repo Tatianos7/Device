@@ -9,7 +9,7 @@
 <body>
 <!-- Навигация 1-->
 <header class ="page-header-catalog">
-  <nav class = "navigation-block">
+  <nav class = "navigation-block catalog-block">
      <span class="visually-hidden">Интернет-магазин умных девайсов</span>
      <img class="logo" src="/device/image/logo/logo.svg" width="145" height="36" alt="Интернет-магазин умных девайсов Девайс">
      <div class="navigation-user">
@@ -17,13 +17,14 @@
       <label class = "search-field">
         <span class="visually-hidden">Текст поиск</span>
       <input class= "field-input" name="search" placeholder="Текст поиска" type="search">
+      <img class="icon-search" src="/device/image/icons/search.svg">
     </label>
-      <button class="search-button button" type="submit">Найти</button>
+      <button class="search-button" type="submit">Найти</button>
     </form>
       <ul class = "navigation-list">
         <li class = "navigation-item">
           <a class="navigation-link" href ="#">
-            <img src="/device/image/icons/person.svg" alt="Личный кабинет">
+            <img class="img-person" src="/device/image/icons/person.svg" alt="Личный кабинет">
           <span class="registration">Коля Петухов</span>
         </a>
         </li>
@@ -36,13 +37,13 @@
         <ul class="additional-menu">
           <li class="additional-item">
             <a class="icon-button" href ="#">
-            <img src="/device/image/icons/sort.svg" alt="Сравнить товары">
+            <img class="sort-icon" src="/device/image/icons/sort.svg" alt="Сравнить товары">
             <span class="sort">Сравнить</span>
           </a>
         </li>
           <li class="additional-item"><a class="icon-button" href ="#">
             <span class="icon-button-counter"><sup>2</sup></span>
-            <img src="/device/image/icons/basket.svg" alt="Корзина товаров">
+            <img class="basket-icon" src="/device/image/icons/basket.svg" alt="Корзина товаров">
             <span class="basket">Корзина</span>
           </a>
         </li>
@@ -53,11 +54,10 @@
       <form class ="catalog-form" action="#" method="get">
         <label class = "catalog-field">
           <span class="catalog-title">Каталог товаров</span>
-        <!-- <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button"> -->
-      </label>
-        <button class="catalog-button button" type="submit">
+        <button class="catalog-button" type="submit">
           <img src="/device/image/icons/plus.svg" alt="Каталог товаров">
         </button>
+      </label>
       </form>
         <ul class="navigation-lists">
           <li class="navigation-items">
@@ -190,7 +190,7 @@
               </li>
               </ul>
         </fieldset>
-        <button class="button" type="submit"><span class="button-submit">Показать</span></button>
+        <button class="button" type="submit">Показать</button>
       </form>
     </div>
       <div class="catalog-right-column">
@@ -203,15 +203,15 @@
           <option value="cheap">По низкой цене</option>
           <option value="expensive">По высокой цене</option>
         </select>
-        <!-- <button class="visually-hidden" type="submit">Отсортировать продукты</button> -->
+        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
 
-      <a href="#" class="button button-light">
+      <!-- <a href="#" class="button-growth">
         <span class="visually-hidden">По возрастанию</span>
       </a>
-      <a class="button" href="#">
+      <a href="#" class="button-decreasing" >
         <span class="visually-hidden">По убыванию</span>
-      </a>
+      </a> -->
     </div>
 
       <div class="product-card">

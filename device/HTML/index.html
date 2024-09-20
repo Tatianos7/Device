@@ -16,15 +16,16 @@
          <div class="navigation-user">
         <form class ="search-form" action="#" method="get">
           <label class = "search-field field">
-            <span class="visually-hidden">Текст поиск</span>
-          <input class= "field-input" name="search" placeholder="Текст поиска" type="search">
+            <span class="visually-hidden">Поиск по сайту</span>
+          <input class= "field-input" name="search" placeholder ="Текст поиска" type="search">
+          <img class="icon-search" src="/device/image/icons/search.svg">
         </label>
-          <button class="search-button button" type="submit">Найти</button>
+          <button class="search-button" type="submit">Найти</button>
         </form>
           <ul class = "navigation-list">
             <li class = "navigation-item">
               <a class="navigation-link" href ="#">
-                <img src="/device/image/icons/person.svg" alt="Личный кабинет">
+                <img class="img-person" src="/device/image/icons/person.svg" alt="Личный кабинет">
               <span class="registration">Войти</span>
             </a>
             </li>
@@ -39,7 +40,7 @@
               <li class="additional-item">
                 <a class="icon-button" href ="#">
                 <span class="icon-button-counter"><sup>2</sup></span>
-                <img class="basket-icon" src="/device/image/icons/basket.svg" width="13" height="21" alt="Корзина товаров">
+                <img class="basket-icon" src="/device/image/icons/basket.svg" alt="Корзина товаров">
                 <span class="basket">Корзина</span>
               </a>
             </li>
@@ -50,7 +51,6 @@
           <form class ="catalog-form" action="#" method="get">
             <label class = "catalog-field field">
               <span class="catalog-title">Каталог товаров</span>
-            <!-- <input class= "field-input-catalog" name="catalog" placeholder="КАТАЛОГ ТОВАРОВ" type="button"> -->
           </label>
             <button class="catalog-button button-submit" type="submit">
               <img src="/device/image/icons/plus.svg" alt="Каталог товаров">
@@ -86,7 +86,7 @@
           <img src="/device/image/icons/forward.svg" alt="Предыдущее фото">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
-        <img class="slider-image" src="/device/image/catalog/slider-1.png" width="560" height="560" alt="Фото-товары">
+        <img class="slider-image" src="/device/image/catalog/slider-1.png" width="520" height="520" alt="Фото-товары">
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующее фото</span>
           <img src="/device/image/icons/back.svg" alt="Следующее фото">
@@ -96,18 +96,17 @@
           <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <ul class="pagination">
-            <button class="pagination-button" type="submit">Подробнее</button>
-            <li class="pagination-item">
-              <a class="pagination-link"></a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link"></a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link"></a>
-            </li>
-          </ul>
+          <div class="pagination">
+            <button class="button" type="submit">Подробнее</button>
+            <div class="pagination-slider">
+            <button class="pagination-button">
+            </button>
+            <button class="pagination-button">
+            </button>
+            <button class="pagination-button">
+            </button>
+          </div>
+          </div>
         <h2 class="visually-hidden">Характеристики</h2>
         <ul class="characteristic-list">
           <li class="characteristic-item">
@@ -199,7 +198,7 @@
           <li class="about-item">СДИК</li>
           <li class="about-item">ТоксБерри</li>
         </ul>
-        <button class="about-button" type="submit">Подробнее о нас</button>
+        <button class="button" type="submit">Подробнее о нас</button>
     </div>
 
     <div class="contacts">
@@ -218,7 +217,7 @@
         <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
         <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
       </ul>
-        <button class="contacts-button" type="submit">Напишите нам</button>
+        <button class="button" type="submit">Напишите нам</button>
     </div>
   </section>
  <!-- секция 5 -->

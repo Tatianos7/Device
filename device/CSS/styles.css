@@ -56,51 +56,89 @@ body {
 }
 
 .page-header {
+  position: relative;
   margin-top: 40px;
   margin-left: 140px;
   background-color: #FFE17F;
   width: 1160px;
   height: 300px;
+  z-index: -1;
 }
 
 /* Навигация 1 */
+
+.logo {
+  margin-left: 60px;
+}
 
 .navigation-block {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-image: linear-gradient(white 8%, #FFE17F 5%);
 }
-
-/* .logo {
-
-} */
 
 .navigation-user {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
-
-
 }
 
 .search-form {
   display: flex;
   margin: 0;
+
 }
 
-/* .search-field {
-  margin: 0;
-} */
+.search-field {
+  position: relative;
+}
 
 .field-input {
   width: 359px;
   height: 40px;
+  padding: 0 48px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50px 0px 0px 50px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.icon-search {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: 12px;
+  bottom: 12px;
+
 }
 
 .search-button {
   width: 160px;
   margin-right: 26px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-left: none;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #FFE17F;
 }
+
+.search-button:hover {
+  background-color: #000000;
+  color: #F0F0F0;
+}
+
+.search-button:active {
+  background-color: #000000;
+  color: #828282;
+}
+
+/* .search-button:focus {
+  width: 160px;
+  height: 40px;
+  outline: 1px solid purple;
+} */
 
 .navigation-list {
   display: flex;
@@ -109,8 +147,6 @@ body {
   margin: 0;
   padding: 0;
   margin-right: 26px;
-  flex-wrap: wrap;
-
 }
 
 .navigation-link {
@@ -119,7 +155,10 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
-  padding: 5px 10px;
+}
+
+.registration {
+  margin-right: 28px;
 }
 
 .additional-menu  {
@@ -166,8 +205,10 @@ body {
 }
 
 .catalog-form {
-  width: 310px;
-  margin-right: 235px;
+  display: flex;
+  align-items: center;
+  width: 317px;
+  margin-right: 245px;
 }
 
 .catalog-title {
@@ -192,16 +233,11 @@ body {
 .navigation-lists {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 500px;
+  width: 471px;
   margin: 0;
   padding: 0;
   list-style-type: none;
   }
-
-/* .navigation-items {
-
-} */
 
 .navigation-links {
   font-family: "Raleway";
@@ -215,21 +251,35 @@ body {
   }
 
 .slider-page{
+  position: absolute;
   font-family: "Rubik", sans-serif;
-    font-style: bold;
-    font-weight: 700;
-    font-size: 180px;
-    color: #F0F0F0;
-    margin-left: 895px;
-    margin-top: 30px;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 180px;
+  color: #F0F0F0;
+  top: 240px;
+  left: 890px;
+  color: #FFFFFF;
 }
 
 /* секция 1 */
 
 .slider {
   display: flex;
+  width: 1160px;
   margin-left: 140px;
   margin-bottom: 70px;
+}
+
+.slider-image {
+  margin-top: -140px;
+}
+
+.slider-button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: -285px;
+
 }
 
 .slider-header {
@@ -242,7 +292,8 @@ body {
 }
 
 .slider-text {
-  margin-left: 40px;
+  margin-left: 30px;
+  margin-top: -30px;
 }
 
 .slider-description {
@@ -271,19 +322,69 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
 }
 
-.pagination-button {
-  width: 220px;
+.pagination-slider {
+  display: flex;
+  justify-content: space-between;
+  width: 76px;
+
 }
 
-/* .pagination-item {
+.pagination-button {
+  width: 12px;
+  height: 12px;
+  border: 2px solid black;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 0;
+}
 
-} */
+.button {
+position: relative;
+z-index: 0;
+display: inline-block;
+border: none;
+padding: 9px 20px;
+min-width: 180px;
+vertical-align: middle;
+font-family: "Raleway", sans-serif;
+color: #000000;
+font-size: 18px;
+font-weight: 800;
+line-height: 22px;
+letter-spacing: 20%;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+background-color: transparent;
+}
 
+.button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 8px;
+  background-color: #FFE17F;
+  transition: height 0.3s ease-in-out;
+}
+
+.button:hover::before,
+.button:active::before {
+  height: 100%;
+}
+
+.button:active::before {
+  background-color: #ffc700;
+}
 
 /* секция 2 */
 
@@ -653,6 +754,18 @@ padding: 0;
   margin: auto;
 }
 
+.exit {
+  opacity: 0.3;
+}
+
+.img-person {
+  margin-right: 9px;
+}
+
+.catalog-block {
+  background-image: linear-gradient(white 10%, #FFE17F 5%);
+}
+
 .inner-header-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -713,12 +826,6 @@ padding: 0;
     font-size: 18px;
     font-weight: bold;
 
-}
-
-.button-submit {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
 }
 
 .catalog-right-column {
