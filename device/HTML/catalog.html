@@ -87,9 +87,11 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <img class="breadcrumbs-arrow" src="/device/image/icons/breadcrumbs/Frame.svg" >
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Каталог товаров</a>
+          <img class="breadcrumbs-arrow" src="/device/image/icons/breadcrumbs/Frame.svg" >
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Моноподы для селфи</a>
@@ -197,7 +199,7 @@
       <div class="sorting-container">
       <form class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
-        <h2 class="sorting-title">Сортировка</h2>
+        <h2 class="sorting-title">Сортировка:</h2>
         <select class="select-control" id="sorting" name="sorting">
           <option value="popular">Популярные</option>
           <option value="cheap">По низкой цене</option>
@@ -205,13 +207,14 @@
         </select>
         <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
-
-      <!-- <a href="#" class="button-growth">
-        <span class="visually-hidden">По возрастанию</span>
-      </a>
-      <a href="#" class="button-decreasing" >
-        <span class="visually-hidden">По убыванию</span>
-      </a> -->
+      <div class="button-sort">
+      <button class="sorting">
+        <img src="/device/image/icons/sort-item.svg" alt="Сортировка по возрастанию">
+      </button>
+      <button class="sorting">
+        <img src="/device/image/icons/sort-item2.svg" alt="Сортировка по убыванию">
+      </button>
+    </div>
     </div>
 
       <div class="product-card">
@@ -277,33 +280,33 @@
 
 
       <div class="pagination-block">
-      <ul class="pagination-list">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">
+      <button class="pagination-button pagination-prev pagination-disabled">
             <span class="back-button">Назад</span>
-          </a>
-        </li>
+
+        </button>
+
+        <ul class="pagination-list">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
+          <a class="pagination-link pagination-current" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
+          <a class="pagination-link pagination-current" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
+          <a class="pagination-link pagination-current" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">5</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
-            <span class="forward-button">Вперед</span>
-          </a>
+          <a class="pagination-link pagination-current" href="#">5</a>
         </li>
       </ul>
+
+        <button class="pagination-button pagination-next pagination-disabled">
+            <span class="forward-button">Вперед</span>
+        </button>
+
     </div>
   </div>
 </div>
@@ -322,7 +325,7 @@
       <address class="footer-address">
         <p class="address-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
       </address>
-      <ul class="navigation-lists">
+      <ul class="navigation-footer">
         <li class="navigation-items">
           <a class="links-footer" href="#">Доставка</a>
         </li>
