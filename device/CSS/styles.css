@@ -202,19 +202,13 @@
     cursor: pointer;
   }
 
-  /* .sort-icon:hover,
-  .basket-icon:hover,
-  .sort:hover,
-  .basket:hover{
+  .icon-button:hover{
     opacity: .4;
   }
 
-  .sort-icon:active,
-  .basket-icon:active,
-  .basket:active,
-  .sort:active {
+  .icon-button:active {
     opacity: .2;
-  } */
+  }
 
   .sort-icon,
   .basket-icon {
@@ -280,6 +274,14 @@
   letter-spacing: 5px;
   }
 
+  .nav:hover {
+    opacity: .2;
+  }
+
+  .nav:active {
+    opacity: .4;
+  }
+
   .slider-page{
     position: absolute;
     font-family: "Rubik", sans-serif;
@@ -290,6 +292,7 @@
     top: 240px;
     left: 890px;
     color: #FFFFFF;
+    pointer-events: none;
   }
 
   /* секция 1 */
@@ -623,6 +626,14 @@
   margin-bottom: 70px;
 }
 
+.rare-item:hover .icon-item {
+  background-color: #FFC500;
+}
+
+.rare-item:active {
+  opacity: .4;
+}
+
 .icon-item {
   background-color: #FFE17F;
   width: 125px;
@@ -845,6 +856,15 @@ padding: 0;
   margin-left: 140px;
   margin-top: 62px;
   margin-bottom: 35px;
+  fill: #FFC700;
+}
+
+.footer-logo:hover {
+  fill: #FFE17F;
+}
+
+.footer-logo:active {
+  opacity: .3;
 }
 
 .footer-block {
@@ -880,6 +900,33 @@ padding: 0;
   padding: 0;
 }
 
+.footer-contacts-address-phone {
+  text-decoration: none;
+}
+
+.links-footer:hover{
+  color: #FFC700;
+  border-bottom: 2px solid #FFC700;
+}
+
+.links-footer:active {
+  color: #FFC700;
+  opacity: .3;
+}
+
+.footer-contacts-address-phone:hover {
+  color: #FFC700;
+  border-bottom: 2px solid #FFC700;
+}
+
+.footer-contacts-address-phone:active {
+  color: #FFC700;
+  border-bottom: 2px solid #FFC700;
+  opacity: .3;
+}
+
+
+
 
 .line {
   margin: 0;
@@ -887,7 +934,6 @@ padding: 0;
   height: 7px;
   border: none;
   background-color: #FFC500;
-
 }
 
 .address-text {
@@ -937,10 +983,32 @@ padding: 0;
   margin-right: 0;
 }
 
-
 .button-social {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.footer-social-item:hover {
+  background-color: #FFC700;
+  border-radius: 100px;
+}
+
+.footer-social-item:active {
+  background-color: #FFE17F;
+  border-radius: 100px;
+  fill-opacity: .3;
+}
+
+.link-color{
+fill: #FFC500;
+}
+
+.link-academy:hover {
+  fill: #F0F0F0;
+}
+
+.link-academy:active {
+  fill-opacity: .3;
 }
 
 /* Каталог */
