@@ -133,6 +133,11 @@
     background-color: #FFE17F;
   }
 
+  .img-person {
+    margin-top: 9px;
+    margin-right: 9px;
+  }
+
   .search-button:hover {
     background-color: #000000;
     color: #F0F0F0;
@@ -275,7 +280,7 @@
   }
 
   .nav:hover {
-    opacity: .2;
+    border-bottom: 2px solid #000000;
   }
 
   .nav:active {
@@ -640,11 +645,6 @@
   height: 100px;
 }
 
-/* .icon-item:hover {
-  background-color: #ffc700;
-}
-!!! как сделать что бы вся плажка работала и менялся фон только у машинки */
-
 .rare-item:active {
   opacity: 0.3;
 }
@@ -807,6 +807,10 @@ padding: 0;
   margin-bottom: 56px;
 }
 
+.subscription-email {
+  display: flex;
+}
+
 .check-block {
   display: flex;
   flex-direction: row;
@@ -925,9 +929,6 @@ padding: 0;
   opacity: .3;
 }
 
-
-
-
 .line {
   margin: 0;
   width: 80px;
@@ -1000,7 +1001,7 @@ padding: 0;
 }
 
 .link-color{
-fill: #FFC500;
+  fill: #FFC500;
 }
 
 .link-academy:hover {
@@ -1032,9 +1033,8 @@ fill: #FFC500;
   opacity: 0.3;
 }
 
-.img-person {
+.img-person-catalog {
   margin-right: 9px;
-  margin-top: 9px;
 }
 
 .navigation-link:hover {
@@ -1081,6 +1081,15 @@ fill: #FFC500;
   text-decoration: none;
   color: #000000;
   margin-right: 15px;
+  cursor: pointer;
+}
+
+.breadcrumbs-link:hover {
+  color: #828282;
+}
+
+.breadcrumbs-link:active{
+  color: #CECECE;
 }
 
 .breadcrumbs-arrow {
@@ -1102,7 +1111,7 @@ fill: #FFC500;
 
 .catalog-filter {
   width: 260px;
-  margin-left: 60px;
+  margin-left: 40px;
   margin-right: 13px;
 }
 
@@ -1110,12 +1119,12 @@ fill: #FFC500;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
 .filter-title {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .catalog-right-column {
@@ -1131,7 +1140,6 @@ fill: #FFC500;
   margin-left: 250px;
   margin-top: 22px;
   margin-bottom: 22px;
-
 }
 
 .sorting {
