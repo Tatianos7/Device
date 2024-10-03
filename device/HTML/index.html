@@ -55,6 +55,40 @@
                 <img class="basket-icon" src="/device/image/icons/basket.svg" alt="Корзина товаров">
                 <span class="basket">Корзина</span>
               </a>
+              <div class="popover-basket popover-cart-basket">
+                <div class="popover-basket-content">
+                  <ul class="cart-item-list">
+                    <li class="cart-item">
+                      <img src="/device/image/catalog/amateur selfie.jpg" width="39" height="43">
+                      <p class="cart-item-title">Любительскаяселфи-палка</p>
+                      <button class="popover-close-button button-close button-light">
+                        <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z"/>
+                          </svg>
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <img src="/device/image/catalog/professional selfie.jpg" width="39" height="43">
+                      <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      <button class="popover-close-button button-close button-light">
+                        <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z"/>
+                          </svg>
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <p class="product-cart-basket">Товаров:<span>2</span></p>
+                      <p class="price-cart-basket">Сумма:<span>1 500 ₽</span></p>
+                    </li>
+                    <li class="cart-item">
+                      <button class="cart-item-button">Открыть карзину</button>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -68,18 +102,53 @@
             <ul class="subcatalog">
               <li><a class="visually-hidden" href="">Виртуальная реальность</a></li>
               <li><a class="visually-hidden" href="">Моноподы и селфи</a></li>
+              <li><a class="visually-hidden" href="">Экшн-камеры</a></li>
+              <li><a class="visually-hidden" href="">Фитнес-браслеты</a></li>
+              <li><a class="visually-hidden" href="">Умные часы</a></li>
+              <li><a class="visually-hidden" href="">Квадрокоптеры</a></li>
               </ul>
             </ul>
 
             <ul class="navigation-items">
               <li class="navigation-items-links">
-                <a class="navigation-links" href="#"> Доставка</a>
+                <a class="navigation-links" href="#"><span>Доставка</span> </a>
+                <!-- Поповер -->
+
+    <div class="visually-hidden popover popover-cart">
+      <button class="popover-close-button button-close button-light">
+        x
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <div class="popover-content">
+      <h2 class="appointment-title">Доставка под заказ</h2>
+      <p class="field-group delivery-form-name">
+        <label class="form-label" for="appointment-name">Ваше имя:</label>
+        <input class="field" type="text" placeholder="Введите имя" id="appointment-name" name="appointment-name">
+      </p>
+      <p class="popover-email">
+        <label class="popover-label" for="popover-email">Ваш e-mail:</label>
+        <input class="popover-mail"  placeholder="Ваш e-mail" type="email" name="popover-email" id="popover-email" required>
+      </p>
+      <p class="field-group delivery-form-name">
+        <label class="form-label" for="delivery-name">Что нужно привезти:</label>
+        <input class="field" type="text" placeholder="В сфободной форме" name="deliveryname" id="delivery-name">
+      </p>
+      <div class="input-quantity">
+        <p>Количество</p>
+        <button id="plus">+</button>
+        <input name="input" type="number" id="col" value="1">
+        <button id="minus">-</button>
+      </div>
+    </div>
+
+  <button class="button appointment-submit" type="submit">отправить</button>
+    </div>
               </li>
               <li  class="navigation-items-links">
-                <a class="navigation-links" href="#">Гарантия</a>
+                <a class="navigation-links" href="#"><span>Гарантия</span></a>
               </li>
               <li  class="navigation-items-links">
-                <a class="navigation-links" href="#">Контанты</a>
+                <a class="navigation-links" href="#"><span>Контанты</span></a>
               </li>
             </ul>
             </ul>
