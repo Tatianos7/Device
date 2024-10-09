@@ -598,6 +598,7 @@
 }
 
 .nav-item {
+  position: relative;  /* -- */
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -614,13 +615,22 @@
 
 /* выпадающее меню */
 
-.subcatalog {
-  /* display: none; */
+.dropdown-content {
+  display: none;
   position: absolute;
-  background-color: #FFE17F;
-  width: 1120px;
+  top: 100%;
   left: -60px;
+  width: 1120px;
+  background-color:#FFE17F;
+  padding-top: 10px;
+  padding-bottom: 10px;
   z-index: 1;
+}
+
+.flex-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .menu-link {
@@ -629,6 +639,25 @@
   text-decoration: none;
   display: block;
   text-transform: none;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-link:hover {
+  /* border-bottom: 2px solid #000000; */
+  opacity: .6;
+}
+
+.menu-link:active {
+  /* border-bottom: 2px solid #000000; */
+  opacity: .4;
 }
 
 .menu-item {
@@ -641,16 +670,7 @@
   letter-spacing: normal;
 }
 
-.menu-item:hover {
-  border-bottom: 1px solid #000000;
-}
-
-.menu-item:active {
-  border-bottom: 1px solid #000000;
-  opacity: .6;
-}
-
-.nav-item:focus-within .subcatalog {
+.nav-item:focus-within .dropdown-content {
   display: block;
 }
 
@@ -661,12 +681,16 @@
 }
 
 .catalog-button {
+  position: absolute;
+  top: -10px;
+  left: 250px;
   width: 50px;
   height: 50px;
   background: inherit  ;
   border: 1px solid black;
   border-radius: 100%;
   padding: 0;
+  z-index: 2;
 }
 
 .navigation-links {
@@ -698,14 +722,6 @@
     border-bottom: 2px solid #000000;
     opacity: .2;
   }
-
-  /* .nav:hover {
-    border-bottom: 2px solid #000000;
-  }
-
-  .nav:active {
-    opacity: .4;
-  } */
 
   .slider-page{
     position: absolute;
